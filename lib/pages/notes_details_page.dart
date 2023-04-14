@@ -24,14 +24,18 @@ class NotesDetailsPage extends StatelessWidget {
             return !note.archived
                 ? IconButton(
                     onPressed: () {
-                      ref.read(notesRepositoryProvider.notifier).archiveNote(note);
+                      ref
+                          .read(notesRepositoryProvider.notifier)
+                          .archiveNote(note);
                       Navigator.of(context).pop();
                     },
                     icon: const Icon(Icons.archive_rounded),
                   )
                 : IconButton(
                     onPressed: () {
-                      ref.read(notesRepositoryProvider.notifier).moveNoteToInbox(note);
+                      ref
+                          .read(notesRepositoryProvider.notifier)
+                          .moveNoteToInbox(note);
                       Navigator.of(context).pop();
                     },
                     icon: const Icon(Icons.undo),
