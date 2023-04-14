@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_demo/models/note.dart';
-import 'package:flutter_riverpod_demo/repositories/notes_repository.dart';
+import '../models/note.dart';
+import '../repositories/notes_repository.dart';
 
 class NotesDetailsPage extends StatelessWidget {
   final Note note;
