@@ -10,6 +10,8 @@ class NotesFilterProvider extends ValueNotifier<NotesViewOptions> {
   NotesFilterProvider(NotesViewOptions filter) : super(filter);
 
   toggle() {
-    value = value == NotesViewOptions.inbox ? NotesViewOptions.archived : NotesViewOptions.inbox;
+    value = value == NotesViewOptions.inbox
+        ? NotesViewOptions.archived
+        : NotesViewOptions.inbox;
   }
 }
