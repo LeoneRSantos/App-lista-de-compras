@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_demo/models/note.dart';
-import 'package:flutter_riverpod_demo/providers/notes/view_toogle_provider.dart';
-import 'package:flutter_riverpod_demo/repositories/notes_repository.dart';
-import 'package:flutter_riverpod_demo/widgets/empty_notes.dart';
-import 'package:flutter_riverpod_demo/widgets/notes/note_card.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import '../../models/note.dart';
+import '../../providers/notes/view_toogle_provider.dart';
+import '../../repositories/notes_repository.dart';
+import '../empty_notes.dart';
+import 'note_card.dart';
 
 class NotesGridView extends ConsumerStatefulWidget {
   const NotesGridView({Key? key}) : super(key: key);
@@ -14,7 +14,8 @@ class NotesGridView extends ConsumerStatefulWidget {
   ConsumerState<NotesGridView> createState() => _NotesGridViewState();
 }
 
-class _NotesGridViewState extends ConsumerState<NotesGridView> with SingleTickerProviderStateMixin {
+class _NotesGridViewState extends ConsumerState<NotesGridView>
+    with SingleTickerProviderStateMixin {
   final duration = const Duration(milliseconds: 150);
   late final AnimationController animation;
   int columnsCount = 2;
@@ -43,7 +44,9 @@ class _NotesGridViewState extends ConsumerState<NotesGridView> with SingleTicker
 
   @override
   void dispose() {
-    ref.read(notesViewModeProvider.notifier).removeListener(runTransitionGridView);
+    ref
+        .read(notesViewModeProvider.notifier)
+        .removeListener(runTransitionGridView);
     animation.dispose();
     super.dispose();
   }
