@@ -10,6 +10,8 @@ class NotesViewModeProvider extends ValueNotifier<NotesViewOptions> {
   NotesViewModeProvider(NotesViewOptions mode) : super(mode);
 
   toggle() {
-    value = value == NotesViewOptions.column ? NotesViewOptions.grid : NotesViewOptions.column;
+    value = value == NotesViewOptions.column
+        ? NotesViewOptions.grid
+        : NotesViewOptions.column;
   }
 }
