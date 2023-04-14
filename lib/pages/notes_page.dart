@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:flutter_riverpod_demo/providers/notes/notes_view_options.dart';
-import 'package:flutter_riverpod_demo/providers/notes/view_filtered_provider.dart';
-import 'package:flutter_riverpod_demo/providers/notes/view_toogle_provider.dart';
-import 'package:flutter_riverpod_demo/widgets/common/custom_floating_button.dart';
-import 'package:flutter_riverpod_demo/widgets/notes/add_note_sheet.dart';
-import 'package:flutter_riverpod_demo/widgets/notes/bottom_navigation_widget.dart';
-import 'package:flutter_riverpod_demo/widgets/notes/notes_grid_view.dart';
+import '../providers/notes/notes_view_options.dart';
+import '../providers/notes/view_filtered_provider.dart';
+import '../providers/notes/view_toogle_provider.dart';
+import '../widgets/common/custom_floating_button.dart';
+import '../widgets/notes/add_note_sheet.dart';
+import '../widgets/notes/bottom_navigation_widget.dart';
+import '../widgets/notes/notes_grid_view.dart';
 
 class NotesPage extends ConsumerWidget {
   const NotesPage({Key? key}) : super(key: key);
