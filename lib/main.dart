@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_demo/app.dart';
-import 'package:flutter_riverpod_demo/configs/analytics.dart';
-import 'package:flutter_riverpod_demo/configs/database.dart';
-import 'package:flutter_riverpod_demo/configs/performance_monitoring.dart';
-import 'package:flutter_riverpod_demo/configs/remote_config.dart';
-import 'package:flutter_riverpod_demo/configs/settings.dart';
-import 'package:flutter_riverpod_demo/splash_screen.dart';
+import '/app.dart';
+import '/configs/analytics.dart';
+import '/configs/database.dart';
+import '/configs/performance_monitoring.dart';
+import '/configs/remote_config.dart';
+import '/configs/settings.dart';
+import '/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
