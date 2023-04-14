@@ -3,7 +3,8 @@ import '../models/note.dart';
 import '../providers/notes/notes_view_options.dart';
 import '../providers/notes/view_filtered_provider.dart';
 
-final notesRepositoryProvider = StateNotifierProvider<NotesRepository, List<Note>>(
+final notesRepositoryProvider =
+    StateNotifierProvider<NotesRepository, List<Note>>(
   (ref) => NotesRepository(),
 );
 
