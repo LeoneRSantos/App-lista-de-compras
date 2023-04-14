@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_demo/providers/notes/notes_view_options.dart';
+import 'notes_view_options.dart';
 
 final notesViewModeProvider = ChangeNotifierProvider(
   (ref) => NotesViewModeProvider(NotesViewOptions.grid),
