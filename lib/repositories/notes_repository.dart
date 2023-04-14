@@ -1,7 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_demo/models/note.dart';
-import 'package:flutter_riverpod_demo/providers/notes/notes_view_options.dart';
-import 'package:flutter_riverpod_demo/providers/notes/view_filtered_provider.dart';
+import '../models/note.dart';
+import '../providers/notes/notes_view_options.dart';
+import '../providers/notes/view_filtered_provider.dart';
 
 final notesRepositoryProvider = StateNotifierProvider<NotesRepository, List<Note>>(
   (ref) => NotesRepository(),
