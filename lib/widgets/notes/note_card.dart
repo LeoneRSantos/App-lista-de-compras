@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod_demo/models/note.dart';
-import 'package:flutter_riverpod_demo/pages/notes_details_page.dart';
+import '../../models/note.dart';
+import '../../pages/notes_details_page.dart';
 
 class NoteCard extends StatelessWidget {
   final Note note;
