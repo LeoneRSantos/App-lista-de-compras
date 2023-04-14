@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_demo/models/note.dart';
-import 'package:flutter_riverpod_demo/repositories/notes_repository.dart';
-import 'package:flutter_riverpod_demo/widgets/notes/color_selector_button.dart';
+import '../../models/note.dart';
+import '../../repositories/notes_repository.dart';
+import 'color_selector_button.dart';
 
 class AddNoteSheet extends ConsumerStatefulWidget {
   const AddNoteSheet({
