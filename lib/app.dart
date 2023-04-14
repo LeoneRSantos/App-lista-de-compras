@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_riverpod_demo/pages/notes_page.dart';
-import 'package:flutter_riverpod_demo/theme/custom_theme.dart';
+import 'package:lista_de_compras/pages/notes_page.dart';
+import 'package:lista_de_compras/theme/custom_theme.dart';
 
 class App extends StatefulWidget {
   const App({Key? key}) : super(key: key);
